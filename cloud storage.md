@@ -62,18 +62,20 @@ Object: database-backup.sql
 # 💾 3️⃣ Storage Classes
 
 Different storage classes based on access frequency:
+| Storage Class | Access Frequency | Storage Cost | Retrieval Cost | Minimum Duration | Use Case               | Approx. Pricing (per GB/month) |
+| ------------- | ---------------- | ------------ | -------------- | ---------------- | ---------------------- | ------------------------------ |
+| Standard      | Frequent         | High         | No             | None             | Active data            | ~$0.020 to ~$0.026             |
+| Nearline      | Monthly          | Lower        | Yes            | 30 days          | Backup                 | ~$0.010 to ~$0.012             |
+| Coldline      | Quarterly        | Very Low     | Higher         | 90 days          | Disaster Recovery (DR) | ~$0.004 to ~$0.002             |
+| Archive       | Yearly           | Lowest       | Highest        | 365 days         | Long-term archive      | ~$0.0012 to ~$0.020            |
 
-| Storage Class | Access Frequency | Storage Cost | Retrieval Cost | Minimum Duration | Use Case               |
-| ------------- | ---------------- | ------------ | -------------- | ---------------- | ---------------------- |
-| Standard      | Frequent         | High         | No             | None             | Active data            |
-| Nearline      | Monthly          | Lower        | Yes            | 30 days          | Backup                 |
-| Coldline      | Quarterly        | Very Low     | Higher         | 90 days          | Disaster Recovery (DR) |
-| Archive       | Yearly           | Lowest       | Highest        | 365 days         | Long-term archive      |
-
-
-
-👉 More access = Higher cost
-👉 Less access = Lower storage cost but retrieval cost applies
+📌 Important Notes for Interview:
+1. Pricing depends on region and network egress.
+2. Retrieval charges apply for Nearline, Coldline, and Archive.
+3. Minimum duration charges apply if deleted early.
+4. All classes provide 11 9’s durability (99.999999999%).
+5. More access = Higher cost
+6. Less access = Lower storage cost but retrieval cost applies
 
 ---
 
