@@ -1,5 +1,16 @@
 # ☁️ GCP VPC (Virtual Private Cloud)
 
+## GCP-VPC vs AWS-VPC –  Comparison
+| Feature         | GCP VPC     | AWS VPC         |
+| --------------- | ----------- | --------------- |
+| Scope           | Global      | Regional        |
+| Subnets         | Regional    | AZ-based        |
+| Firewall        | VPC-level   | SG + NACL       |
+| Internet Access | Cloud NAT   | NAT Gateway     |
+| Architecture    | Flat global | Region isolated |
+| Complexity      | Simpler     | More complex    |
+
+
 ## 1) Introduction
 Google Cloud VPC is a virtual network service provided by Google Cloud.
 
