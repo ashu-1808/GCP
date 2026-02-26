@@ -89,6 +89,7 @@ Used when:
 2. You need strict least-privilege access
 
 Example:
+
 Custom role allowing:
 `a. Start VM`
 `b. Stop VM`
