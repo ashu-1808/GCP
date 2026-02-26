@@ -101,7 +101,6 @@ Custom role allowing:
 
 GCP resources follow a hierarchy:
 
-![Image](https://d33wubrfki0l68.cloudfront.net/eaddeba5e864fe63444fe247f7a7277b427e42c2/ed88b/gcpimages/02-architecture/resource-hierarchy-overview.png)
 
 ![Image](https://docs.cloud.google.com/static/iam/img/policy-inheritance.svg)
 
