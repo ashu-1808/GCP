@@ -63,13 +63,13 @@ Object: database-backup.sql
 
 Different storage classes based on access frequency:
 
-| Feature          | Standard    | Nearline | Coldline  | Archive           |
-| ---------------- | ----------- | -------- | --------- | ----------------- |
-| Access Frequency | Frequent    | Monthly  | Quarterly | Yearly            |
-| Storage Cost     | High        | Lower    | Very Low  | Lowest            |
-| Retrieval Cost   | No          | Yes      | Higher    | Highest           |
-| Minimum Duration | None        | 30 days  | 90 days   | 365 days          |
-| Use Case         | Active data | Backup   | DR        | Long-term archive |
+| Storage Class | Access Frequency | Storage Cost | Retrieval Cost | Minimum Duration | Use Case               |
+| ------------- | ---------------- | ------------ | -------------- | ---------------- | ---------------------- |
+| Standard      | Frequent         | High         | No             | None             | Active data            |
+| Nearline      | Monthly          | Lower        | Yes            | 30 days          | Backup                 |
+| Coldline      | Quarterly        | Very Low     | Higher         | 90 days          | Disaster Recovery (DR) |
+| Archive       | Yearly           | Lowest       | Highest        | 365 days         | Long-term archive      |
+
 
 
 👉 More access = Higher cost
