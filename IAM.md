@@ -63,6 +63,7 @@ Instead of assigning permissions individually, we assign a Role.
 | Editor  | Modify resources               |
 | Viewer  | Read-only access               |
 | Browser | Access to browse GCP resources |
+
 ⚠ Not recommended in production (too broad access)
 
 ---
