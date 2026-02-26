@@ -90,9 +90,9 @@ Used when:
 
 Example:
 Custom role allowing:
-`a. Start VM
-b. Stop VM
-  But not delete VM.`
+`a. Start VM`
+`b. Stop VM`
+ ` But not delete VM.`
 
 ---
 
