@@ -203,13 +203,13 @@ Discounts available:
 
 ## 10) How to Create GCP Instance (Console Steps)
 
-![Image](https://docs.cloud.google.com/static/architecture/images/vpc-bps-native-firewall-rules.svg)
+![Image](https://storage.googleapis.com/gweb-cloudblog-publish/images/gke-ui-ga-9fsvt.max-700x700.PNG)
 
-![Image](https://d33wubrfki0l68.cloudfront.net/57750035ef2c7221ce9bdece3154ff503d5fdc9c/a0271/gcpimages/02-architecture/00-public-private-subnet.png)
+![Image](https://storage.googleapis.com/gweb-cloudblog-publish/images/Name_VM_Instance.max-1600x1600.png)
 
-![Image](https://docs.cloud.google.com/static/architecture/images/vpc-bps-multi-nic-shared-vpc.png)
+![Image](https://miro.medium.com/1%2A7-lNQ1tB82cByt1R0YuwKA.png)
 
-![Image](https://miro.medium.com/1%2A6HWT7WGREFABwDf8poEqCQ.jpeg)
+![Image](https://docs.cloud.google.com/static/compute/images/monitoring/a-demo.jpg)
 1. Go to Compute Engine
 2. Click Create Instance
 3. Select Name
