@@ -57,12 +57,12 @@ Instead of assigning permissions individually, we assign a Role.
 
 ### 🔹 Types of Roles in GCP
 ### 1️⃣ Basic Roles (Primitive Roles)
-| Role   | Access Level             |
-| ------ | ------------------------ |
-| Owner  | Full access + manage IAM |
-| Editor | Modify resources         |
-| Viewer | Read-only access         |
-
+| Role    | Access Level                   |
+| ------  | ------------------------------ |
+| Owner   | Full access + manage IAM       |
+| Editor  | Modify resources               |
+| Viewer  | Read-only access               |
+| Browser | Access to browse GCP resources |
 ⚠ Not recommended in production (too broad access)
 
 ---
