@@ -23,11 +23,9 @@ IAM has 3 main components:
 ---
 
 ## 1️⃣ Identity (Who?)
-
-An **Identity** is a user or system that needs access.
+An Identity is a user or system that needs access.
 
 ### Types of Identities:
-
 1. Google Account ([user@gmail.com](mailto:user@gmail.com))
 2. Service Account (used by applications/VMs)
 3. Google Group
@@ -53,14 +51,12 @@ Examples:
 2. `storage.objects.delete`
 3. `bigquery.tables.get`
 
-Instead of assigning permissions individually, we assign a **Role**.
+Instead of assigning permissions individually, we assign a Role.
 
 ---
 
 ### 🔹 Types of Roles in GCP
-
 ### 1️⃣ Basic Roles (Primitive Roles)
-
 | Role   | Access Level             |
 | ------ | ------------------------ |
 | Owner  | Full access + manage IAM |
@@ -72,11 +68,8 @@ Instead of assigning permissions individually, we assign a **Role**.
 ---
 
 ### 2️⃣ Predefined Roles (Most Used)
-
 Google-created roles for specific services.
-
 Examples:
-
 1. `roles/compute.admin`
 2. `roles/storage.admin`
 3. `roles/container.admin`
@@ -88,17 +81,14 @@ Examples:
 ---
 
 ### 3️⃣ Custom Roles
-
 User-created roles with selected permissions.
 
 Used when:
-
 1. Predefined roles give too many permissions
 2. You need strict least-privilege access
 
 Example:
 Custom role allowing:
-
 a. Start VM
 b. Stop VM
   But not delete VM.
@@ -113,10 +103,7 @@ GCP resources follow a hierarchy:
 
 ![Image](https://docs.cloud.google.com/static/iam/img/policy-inheritance.svg)
 
-![Image](https://i.sstatic.net/dvUOM.png)
-
 ### Hierarchy Structure:
-
 ```
 Organization
    ↓
@@ -128,24 +115,19 @@ Resources (VM, Storage, DB, etc.)
 ```
 
 🔽 Permissions inherit downward.
-
 If a role is assigned at:
-
 1. Organization → Applies to all projects
 2. Project → Applies to all resources inside project
 
 ---
 
 #  2️⃣ IAM Policy Structure
-
 IAM Policy consists of:
-
 ```
 Member + Role + Resource
 ```
 
 Example:
-
 ```
 Member: user:dev@gmail.com
 Role: roles/compute.viewer
@@ -157,44 +139,37 @@ Meaning: User can view compute resources in Project-Dev.
 ---
 
 #  3️⃣ Service Accounts (Very Important)
-
 ### What is Service Account?
 
-A **Service Account** is used by applications or services to interact with GCP.
+A Service Account is used by applications or services to interact with GCP.
 
 Examples:
-
-* VM accessing Cloud Storage
-* Cloud Function accessing BigQuery
-* CI/CD pipeline deploying to GKE
+1. VM accessing Cloud Storage
+2. Cloud Function accessing BigQuery
+3 CI/CD pipeline deploying to GKE
 
 Important Points:
-
-* Has email format
-* Assigned IAM roles
-* Should follow least privilege
-* Avoid long-lived service account keys
-* Prefer Workload Identity (more secure)
+1. Has email format
+2. Assigned IAM roles
+3. Should follow least privilege
+4. Avoid long-lived service account keys
+5. Prefer Workload Identity (more secure)
 
 ---
 
 #  4️⃣ IAM Conditions (Advanced Concept)
 
-IAM allows **conditional access**.
-
+IAM allows conditional access.
 Example:
-
-* Allow access only during business hours
-* Allow access from specific IP range
+1. Allow access only during business hours
+2. Allow access from specific IP range
 
 This adds extra security layer.
 
 ---
 
 #  5️⃣ Policy Inheritance Model
-
 If role assigned at higher level:
-
 | Level        | Effect                                  |
 | ------------ | --------------------------------------- |
 | Organization | Applies to all folders & projects       |
@@ -206,9 +181,7 @@ Access always flows downward.
 ---
 
 #  6️⃣ Principle of Least Privilege
-
 Give only necessary permissions.
-
 ❌ Don’t assign Owner role unnecessarily
 ✅ Assign specific service roles
 
@@ -219,7 +192,6 @@ Instead of Owner → use `roles/compute.instanceAdmin`
 
 #  7️⃣ Common GCP IAM Commands
 ### View IAM policy:
-
 ```
 gcloud projects get-iam-policy PROJECT_ID
 ```
@@ -240,7 +212,6 @@ gcloud iam roles list
 ```
 gcloud iam roles describe roles/compute.admin
 ```
-
 ---
 
 # 🏢 8️⃣ Real-Time DevOps Example
@@ -258,13 +229,13 @@ Jenkins service account → `roles/container.developer` for GKE deployment.
 ---
 
 # 📋 9️⃣ IAM Best Practices
-✔ Use predefined roles
-✔ Avoid basic roles in production
-✔ Enable Audit Logs
-✔ Rotate service account keys
-✔ Use IAM Recommender
-✔ Implement least privilege
-✔ Use groups instead of individual users
+1.✔ Use predefined roles
+2.✔ Avoid basic roles in production
+3.✔ Enable Audit Logs
+4.✔ Rotate service account keys
+5.✔ Use IAM Recommender
+6.✔ Implement least privilege
+7.✔ Use groups instead of individual users
 
 ---
 
