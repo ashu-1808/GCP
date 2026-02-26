@@ -97,6 +97,7 @@ Firewall rules are required to allow:
 2. HTTP (port 80)
 3. HTTPS (port 443)
 4. nfs (port 2049)
+5. MySQL (port 3306)
 ---
 
 ### 5. Service Account
