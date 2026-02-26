@@ -1,15 +1,6 @@
 # ☁️ GCP VPC (Virtual Private Cloud)
 
 ## 1) Introduction
-
-![Image](https://docs.cloud.google.com/static/architecture/images/vpc-bps-native-firewall-rules.svg)
-
-![Image](https://d33wubrfki0l68.cloudfront.net/57750035ef2c7221ce9bdece3154ff503d5fdc9c/a0271/gcpimages/02-architecture/00-public-private-subnet.png)
-
-![Image](https://docs.cloud.google.com/static/architecture/images/vpc-bps-multi-nic-shared-vpc.png)
-
-![Image](https://miro.medium.com/1%2A6HWT7WGREFABwDf8poEqCQ.jpeg)
-
 Google Cloud VPC is a virtual network service provided by Google Cloud.
 
 1. It allows you to create a private network in GCP.
