@@ -119,13 +119,13 @@ In GCP, a VPS (Virtual Private Server) is created using Google Compute Engine in
 
 ## Method 1: Create VPS Using GCP Console (GUI)
 
-![Image](https://storage.googleapis.com/gweb-cloudblog-publish/images/gke-ui-ga-9fsvt.max-700x700.PNG)
+![Image](https://docs.cloud.google.com/static/architecture/images/vpc-bps-native-firewall-rules.svg)
 
-![Image](https://storage.googleapis.com/gweb-cloudblog-publish/images/Name_VM_Instance.max-1600x1600.png)
+![Image](https://d33wubrfki0l68.cloudfront.net/57750035ef2c7221ce9bdece3154ff503d5fdc9c/a0271/gcpimages/02-architecture/00-public-private-subnet.png)
 
-![Image](https://miro.medium.com/1%2A7-lNQ1tB82cByt1R0YuwKA.png)
+![Image](https://docs.cloud.google.com/static/architecture/images/vpc-bps-multi-nic-shared-vpc.png)
 
-![Image](https://docs.cloud.google.com/static/compute/images/monitoring/a-demo.jpg)
+![Image](https://miro.medium.com/1%2A6HWT7WGREFABwDf8poEqCQ.jpeg)
 
 ### Step 1: Login
 1. Go to Google Cloud Console.
